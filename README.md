@@ -4,6 +4,7 @@ The BEHAVE dataset offers multi-view RGB-D sequences capturing 3D human-object i
 - multiview
 - interactions between human and objects
 - rgb, mask, SMPL, calibs
-![Uploading image.png…]()
+<img width="1141" alt="image" src="https://github.com/user-attachments/assets/6ccc3de6-f90c-4043-a2fa-40f2744648a8" />
+
 
 ### datasets structure
