@@ -34,8 +34,7 @@ DATASET_PATH
 |--------fit02                    # registered SMPL mesh and parameters
 |------object_name
 |--------object_name.ply          # segmented object point cloud
-|--------fit01                    # object registrations
-|------------       
+|--------fit01                    # object registrations      
 
 
 ```
