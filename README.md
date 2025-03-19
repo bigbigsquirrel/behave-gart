@@ -8,3 +8,34 @@ The BEHAVE dataset offers multi-view RGB-D sequences capturing 3D human-object i
 
 
 ### datasets structure
+以一个场景(Data01 yogaball_play)为例：
+```
+DATASET_PATH
+|--calibs           # Kinect camera intrinsics and extrinsics for different locations
+|----Date01         
+|------background   # background image and point cloud 
+|------config       # camera poses(extrinsics)
+|------intrinsics      # intrinsics of 4 kinect camera
+|--videos
+|----cam00.mp4
+|----cam01.mp4
+|----cam02.mp4
+|----cam03.mp4
+|--Date01_Sub01_yogaball_play
+|----t00[xx].000        # 第xx个帧的图像、点云、poses信息等
+|------k[0-3].color.jpg           # 四个相机角度的rgb图片
+|------k[0-3].depth.png           # 四个相机角度的depth图片
+|------k[0-3].person_mask.jpg     # human masks
+|------k[0-3].obj_rend_mask.jpg   # object masks
+|------k[0-3].color.json          # openpose detections, OpenPose工具生成的人体姿态估计
+|------k[0-3].mocap.[json|ply]    # FrankMocap estimated pose and mesh
+|------person
+|--------person.ply               # segmented person point cloud
+|--------fit02                    # registered SMPL mesh and parameters
+|------object_name
+|--------object_name.ply          # segmented object point cloud
+|--------fit01                    # object registrations
+|------------       
+
+
+```
