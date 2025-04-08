@@ -1,6 +1,7 @@
 # behave-gart
 ## BEHAVE
 The BEHAVE dataset offers multi-view RGB-D sequences capturing 3D human-object interactions, with SMPL-based human tracking and template-mesh object tracking. It contains 15.2k annotated frames(10.7k frames for training and 4.5k frames for testing respectively) (including contact labels) from 8 participants and 20 objects across 5 environments, supporting research in interaction modeling.
+-  Azure Kinect cameras
 - multiview(4 cams)
 - interactions between human and objects
 - rgb, mask, SMPL, calibs parameters
@@ -38,3 +39,16 @@ DATASET_PATH
 
 
 ```
+
+
+### Results up to now
+BundleSDF（CVPR 2023）混合SDF表示法
+<img width="701" alt="image" src="https://github.com/user-attachments/assets/81c5ecec-96e8-4ade-a142-eb09b95a4f88" />
+<img width="457" alt="image" src="https://github.com/user-attachments/assets/b8da2461-6432-480b-a079-881a635623f7" />
+
+Joint Reconstruction of 3D Human and Object via Contact-Based Refinement Transformer(CVPR 2024)
+<img width="589" alt="image" src="https://github.com/user-attachments/assets/84861993-e0f0-4035-a482-9f271978b953" />
+
+TFS-NeRF () 动态 无模版 NeRF方法
+<img width="918" alt="image" src="https://github.com/user-attachments/assets/a85dc17f-aa7c-4193-9b78-09c9eb6fddc0" />
+
